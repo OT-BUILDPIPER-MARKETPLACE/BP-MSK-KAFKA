@@ -2,11 +2,11 @@
 source /opt/buildpiper/shell-functions/functions.sh
 source /opt/buildpiper/shell-functions/log-functions.sh
 
-logInfoMessage "I'll create/update RDS whose properties are available at [$WORKSPACE] and have mounted at [$CODEBASE_DIR]"
+logInfoMessage "I'll create/update  whose properties are available at [$WORKSPACE] and have mounted at [$CODEBASE_DIR]"
 sleep  "$SLEEP_DURATION"
 
 cd  "$WORKSPACE"/"${CODEBASE_DIR}"
-cp /opt/buildpiper/eks.tf .
+cp /opt/buildpiper/msk-kafka.tf .
 cp /opt/buildpiper/variable.tf .
 cp /opt/buildpiper/data.tf .
 cp /opt/buildpiper/msk-custom-configuration.json.tpl .
